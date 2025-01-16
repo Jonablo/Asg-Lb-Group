@@ -1,14 +1,11 @@
 name: Deploy to AWS
 
 on:
-    push:
-      branches:
-        - feature/qa-integration
-    workflow_run:
-      workflows:
-        - Build and Push Docker Images to dockerhub
-      types:
-        - completed
+  workflow_run:
+    workflows:
+      - Build and Push Docker Images to dockerhub
+    types:
+      - completed
 
 jobs:
   deploy:
