@@ -65,6 +65,26 @@ RestApi/
 └── LICENSE
 ```
 
+
+## 📦 Dependencies
+
+The main dependencies of the project are:
+
+- `express`: Web framework for building the API.
+- `ejs`: Template engine for rendering views.
+- `morgan`: Middleware for logging HTTP requests.
+- `nodemon`: Development tool that automatically restarts the application.
+
+## 🛠️ Configuration Files
+
+- **`.dockerignore`**:
+  List of files and directories to ignore during Docker image build.
+
+- **`.gitignore`**:
+  List of files and directories to ignore by Git.
+
+
+
 ## 🤝 Contributions
 
 Contributions are welcome! If you'd like to improve this project, please follow these steps:
@@ -74,6 +94,8 @@ Contributions are welcome! If you'd like to improve this project, please follow 
 3. Commit your changes (`git commit -m 'Add a new feature'`).
 4. Push to the branch (`git push origin feature/new-feature`).
 5. Open a Pull Request.
+
+
 
 ## 📄 License
 
