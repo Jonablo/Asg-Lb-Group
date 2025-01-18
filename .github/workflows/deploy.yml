@@ -19,7 +19,7 @@ jobs:
 
       - name: Deploy RestApi_Address to EC2 Instance 1
         run: |
-          ssh -o StrictHostKeyChecking=no -i private_key.pem ec2-user@ec2-34-235-117-254.compute-1.amazonaws.com << 'EOF'
+          ssh -o StrictHostKeyChecking=no -i private_key.pem ec2-user@ec2-34-235-143-130.compute-1.amazonaws.com << 'EOF'
             if ! command -v docker &> /dev/null
             then
               sudo dnf install -y docker
@@ -34,7 +34,7 @@ jobs:
 
       - name: Deploy RestApi_RyM to EC2 Instance 2
         run: |
-          ssh -o StrictHostKeyChecking=no -i private_key.pem ec2-user@ec2-54-197-164-35.compute-1.amazonaws.com << 'EOF'
+          ssh -o StrictHostKeyChecking=no -i private_key.pem ec2-user@ec2-54-88-83-33.compute-1.amazonaws.com << 'EOF'
             if ! command -v docker &> /dev/null
             then
               sudo dnf install -y docker
